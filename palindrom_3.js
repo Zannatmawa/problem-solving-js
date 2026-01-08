@@ -1,13 +1,16 @@
-const word = "madam"
-
-let start = word[0]
+// const word = "madam"
 
 
-if (word.startsWith(start) && word.endsWith(start)) {
-    console.log('palindrom')
+function Palindrom(word) {
+    let start = word[0]
+
+    if (word.startsWith(start) && word.endsWith(start)) {
+        console.log('true')
+    }
+    else {
+        console.log('false')
+    }
+    return 0
 }
-else {
-    console.log('not ')
-}
-
-//
+console.log(Palindrom("hello"))
+//done
