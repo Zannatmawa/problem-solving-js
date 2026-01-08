@@ -8,4 +8,5 @@ function factorial(n) {
     return result;
 }
 
-console.log(factorial(5)); 
+console.log(factorial(5));
+//done

@@ -1,6 +1,5 @@
 // const word = "madam"
 
-
 function Palindrom(word) {
     let start = word[0]
 
