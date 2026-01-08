@@ -1,14 +1,13 @@
+function CapitalFirstLetter(s) {
+    let words = s.split(" ");
 
-function CapitalFirstLetter(n) {
-    let newStr = ""
-    for (let i = 0; i < n.length; i++) {
-        if (n[i] === ' ') {
-            newStr = n.split(' ')
-        }
+    for (let i = 0; i < words.length; i++) {
+        words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
     }
-    newStr[0][0] = newStr[0].charAt(0).toUpperCase()
-    console.log(newStr[0][0])
-    // console.log(newStr[1])
+
+    return words.join(" ");
 }
 
-CapitalFirstLetter("hello world")
+console.log(CapitalFirstLetter("hello world"));
+
+//done
