@@ -1,13 +1,16 @@
-const vowels = "programming";
-let count = 0;
-for (var i = 0; i < vowels.length; i++) {
-    console.log(i);
-    // if (i == 'a' || i == 'e' || i == 'i' || i == 'o' || i == 'u') {
-    //     count++
-    //     console.log('a');
-    // }
+// const vowels = "programming";
 
-    for (var j = 0; j < vowels[i]; j++) {
-        console.log(j)
+function CountVowels(vowels) {
+    let count = 0;
+    for (var i = 0; i < vowels.length; i++) {
+
+        if (vowels[i] == 'a' || vowels[i] == 'e' || vowels[i] == 'i' || vowels[i] == 'o' || vowels[i] == 'u') {
+            count++
+        }
     }
+    return count
 }
+
+console.log(CountVowels('programming'))
+
+//done
